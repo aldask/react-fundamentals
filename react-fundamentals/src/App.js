@@ -3,9 +3,23 @@ import './App.css';
 import ChildrenWithTitle from './ChildrenWithTitle';
 import { FirstReactComponent } from './FirstReactComponent';
 import ConditionalRenderingComponent from './ConditionalRenderingComponent';
+import listForRender from './RenderingLists';
 
 
 function App() {
+  const notFiltered = listForRender.map((item) => (
+    <ul key={item.value}>
+      <li>{item.name}</li>
+    </ul>
+  ));
+
+  const filteredItems = listForRender.filter(item => item.value % 2 === 0);
+  const filtered = filteredItems.map((item) => (
+    <ul key={item.value}>
+      <li>{item.name}</li>
+    </ul>
+  ));
+
   return (
     <div>
       <h1>Hello world</h1>
@@ -21,6 +35,14 @@ function App() {
       <h2>True one</h2>
       <ConditionalRenderingComponent
         isBlue = {true}/>
+      <section>
+        <h1>Full list</h1>
+        {notFiltered}
+      </section>
+      <section>
+        <h1>Filtered list</h1>
+        {filtered}
+      </section>
     </div>
   );
 }
