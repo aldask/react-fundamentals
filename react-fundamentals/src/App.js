@@ -4,6 +4,7 @@ import ChildrenWithTitle from './ChildrenWithTitle';
 import { FirstReactComponent } from './FirstReactComponent';
 import ConditionalRenderingComponent from './ConditionalRenderingComponent';
 import listForRender from './RenderingLists';
+import InteractionEvents33 from './InteractionEvents33';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div>
+      <InteractionEvents33 />
       <h1>Hello world</h1>
       <p>You look beautiful</p>
       <FirstReactComponent />
