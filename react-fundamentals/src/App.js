@@ -5,6 +5,7 @@ import { FirstReactComponent } from './FirstReactComponent';
 import ConditionalRenderingComponent from './ConditionalRenderingComponent';
 import listForRender from './RenderingLists';
 import InteractionEvents33 from './InteractionEvents33';
+import StatefulComponent34 from './StatefulComponent34';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <h1>Filtered list</h1>
         {filtered}
       </section>
+      <StatefulComponent34 />
     </div>
   );
 }
