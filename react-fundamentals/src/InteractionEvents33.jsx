@@ -13,4 +13,4 @@ const InteractionEvents33 = () => {
     );
   };
   
-  export default InteractionEvents33;
+export default InteractionEvents33;
