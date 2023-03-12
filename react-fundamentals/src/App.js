@@ -6,6 +6,7 @@ import ConditionalRenderingComponent from './ConditionalRenderingComponent';
 import listForRender from './RenderingLists';
 import InteractionEvents33 from './InteractionEvents33';
 import StatefulComponent34 from './StatefulComponent34';
+import SynchronizingWithEffects35 from './SynchronizingWithEffects35';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div>
+      <SynchronizingWithEffects35 />
       <InteractionEvents33 />
       <h1>Hello world</h1>
       <p>You look beautiful</p>
